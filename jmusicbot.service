@@ -1,0 +1,12 @@
+[Unit]
+Description=JMusicBot for Discord
+
+[Service]
+ExecStart=/usr/bin/java -Dnogui=true -jar JMusicBot-0.3.6.jar
+WorkingDirectory=%h/code/jmusicbot
+NoNewPrivileges=true
+
+[Install]
+WantedBy=network-online.target
+After=network-online.target
+
