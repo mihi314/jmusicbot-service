@@ -7,6 +7,5 @@ WorkingDirectory=%h/code/jmusicbot
 NoNewPrivileges=true
 
 [Install]
-WantedBy=network-online.target
-After=network-online.target
+WantedBy=default.target
 
