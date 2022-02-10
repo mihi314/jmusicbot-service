@@ -1,11 +1,13 @@
 [Unit]
 Description=JMusicBot for Discord
+StartLimitIntervalSec=60
+StartLimitBurst=10
 
 [Service]
 ExecStart=/usr/bin/java -Dnogui=true -jar JMusicBot-0.3.6.jar
 WorkingDirectory=%h/code/jmusicbot
 NoNewPrivileges=true
+Restart=always
 
 [Install]
 WantedBy=default.target
-
